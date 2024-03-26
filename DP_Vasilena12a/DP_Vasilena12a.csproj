@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3290FA5-721C-4694-A9CD-648FCA005341}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DP_Vasilena12a</RootNamespace>
+    <AssemblyName>DP_Vasilena12a</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DP_Vasilena_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DP_Vasilena_DataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presenter\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presenter\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenter\LogIn_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presenter\LogIn_Admin.Designer.cs">
+      <DependentUpon>LogIn_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenter\LogIn_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presenter\LogIn_User.Designer.cs">
+      <DependentUpon>LogIn_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\BarabaniControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\BarabaniControl.Designer.cs">
+      <DependentUpon>BarabaniControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KitariControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\KitariControl.Designer.cs">
+      <DependentUpon>KitariControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KontaktiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\KontaktiControl.Designer.cs">
+      <DependentUpon>KontaktiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KontroleriIMicrofoniControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\KontroleriIMicrofoniControl.Designer.cs">
+      <DependentUpon>KontroleriIMicrofoniControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OsvetlenieControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\OsvetlenieControl.Designer.cs">
+      <DependentUpon>OsvetlenieControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PianaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PianaControl.Designer.cs">
+      <DependentUpon>PianaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PultoweMixeriIUsilvateliControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PultoweMixeriIUsilvateliControl.Designer.cs">
+      <DependentUpon>PultoweMixeriIUsilvateliControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegistraciqControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RegistraciqControl.Designer.cs">
+      <DependentUpon>RegistraciqControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SintezatoriControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SintezatoriControl.Designer.cs">
+      <DependentUpon>SintezatoriControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TonkoloniIBassKoloniControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\TonkoloniIBassKoloniControl.Designer.cs">
+      <DependentUpon>TonkoloniIBassKoloniControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UslugiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UslugiControl.Designer.cs">
+      <DependentUpon>UslugiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VhodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\VhodControl.Designer.cs">
+      <DependentUpon>VhodControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZaNasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ZaNasControl.Designer.cs">
+      <DependentUpon>ZaNasControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presenter\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenter\LogIn_Admin.resx">
+      <DependentUpon>LogIn_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenter\LogIn_User.resx">
+      <DependentUpon>LogIn_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\BarabaniControl.resx">
+      <DependentUpon>BarabaniControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KitariControl.resx">
+      <DependentUpon>KitariControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KontaktiControl.resx">
+      <DependentUpon>KontaktiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KontroleriIMicrofoniControl.resx">
+      <DependentUpon>KontroleriIMicrofoniControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OsvetlenieControl.resx">
+      <DependentUpon>OsvetlenieControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PianaControl.resx">
+      <DependentUpon>PianaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PultoweMixeriIUsilvateliControl.resx">
+      <DependentUpon>PultoweMixeriIUsilvateliControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RegistraciqControl.resx">
+      <DependentUpon>RegistraciqControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SintezatoriControl.resx">
+      <DependentUpon>SintezatoriControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TonkoloniIBassKoloniControl.resx">
+      <DependentUpon>TonkoloniIBassKoloniControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UslugiControl.resx">
+      <DependentUpon>UslugiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VhodControl.resx">
+      <DependentUpon>VhodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ZaNasControl.resx">
+      <DependentUpon>ZaNasControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Model\DP_Vasilena_DataBaseDataSet.xsc">
+      <DependentUpon>DP_Vasilena_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Model\DP_Vasilena_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DP_Vasilena_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\DP_Vasilena_DataBaseDataSet.xss">
+      <DependentUpon>DP_Vasilena_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Model\DP Vasilena DataBase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
